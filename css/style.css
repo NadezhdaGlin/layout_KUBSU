@@ -1,0 +1,47 @@
+body {
+    background-color: black      
+}
+
+.container
+{
+    display: flex;  
+    flex-direction:row-reverse;
+    justify-content:center;
+}
+.pr{
+    margin-left:203px;
+    margin-top:-65px;
+    padding:10px;
+    height:10px;
+    width:6px;
+    outline:2px solid pink;
+    background:pink; 
+}
+
+.border{
+    margin-top;
+    outline:5px solid pink;
+    height:100px;
+    width: 200px;
+    background: #fff0f5;
+    margin:25px;
+}
+
+#rectangle1{
+    width:50px;
+    height: 100px;
+    background: #8b0000;
+}
+
+
+#rectangle2{
+    width: 100px;
+    height: 100px;
+    background:#ffa500;
+}
+
+#rectangle3{
+    width: 200px;
+    height: 100px;
+    background: #90ee90;
+}

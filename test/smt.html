@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Титл</title>
+</head>
+
+<body>
+    <div id = "link">
+
+    </div>
+</body>
+
+<script>
+    function link () {
+        const div = document.getElementById("link");
+        let input = prompt("Введите ссылку:");
+        let index = 0;
+        while (input) {
+            index++
+
+            const anchor = document.createElement("a");
+            anchor.href = input;
+            anchor.innerText = "#" + index + ":" + input;
+            div.appendChild(anchor)
+            div.appendChild(document.createElement("br"));
+            input = prompt("Введите ссылку:");
+        }
+        input = prompt("Удалите элемент НАД которым будет удален элемент (типа при вводе 4, будет удален 3):");
+        while (input) {
+            let inputInt = parseInt(input);
+
+            index = 0;
+            document.querySelectorAll("#link a").forEach(element => {
+                index += 1;
+                if (index == inputInt - 1) {
+                    element.remove();
+                }
+            });
+
+            input = prompt("Введите ссылку для вставки:");
+        }
+    }
+
+    link()
+</script>
+</html>
